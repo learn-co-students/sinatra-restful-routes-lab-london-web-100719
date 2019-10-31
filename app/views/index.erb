@@ -1,0 +1,9 @@
+<h1>All of My Ultimate Recipes</h1>
+
+<h2><a href="/recipes/new"> Create New Recipe </a></h2>
+
+<% @recipes.each do |r| %>
+    <h3><a href="/recipes/<%=r.id%>"><%=r.name%></a></h3>
+    <p>Ingredients: <%=r.ingredients%></p>
+    <p>Cook Time: <%=r.cook_time%></p>
+<%end%>
